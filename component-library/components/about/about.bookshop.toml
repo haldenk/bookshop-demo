@@ -1,0 +1,15 @@
+[component]
+structures = ["content_blocks"]
+label = "About"
+description = "Main page about section"
+icon = "title"
+tags = []
+
+[props]
+preheading = "What We are"
+heading = "We are dynamic team of creative people"
+subheading = "We are Perfect Solution"
+text = "We provide consulting services in the area of IFRS and management reporting, helpingcompanies to reach their highest level. We optimize business processes, making them easier."
+[[props.link]]
+text = "Get started"
+url = "#"
