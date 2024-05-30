@@ -1,0 +1,16 @@
+<section class="section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-5 col-lg-6">
+        <div class="cta-item bg-white p-5 rounded">
+          <span class="h6 text-color">{{ .title | markdownify}}</span>
+          <h2 class="mt-2 mb-4">{{ .header | markdownify}}</h2>
+          <p class="lead mb-4">{{ .subheader | markdownify}} :</p>
+          <h3>
+            <i class="ti-mobile mr-3 text-color"></i>{{ .number | markdownify}}
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

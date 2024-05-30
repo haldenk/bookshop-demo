@@ -1,15 +1,15 @@
 [component]
 structures = ["content_blocks"]
-label = "About"
-description = "Main page about section"
+label = "start"
+description = "About page start section"
 icon = "title"
 tags = []
 
 [props]
-preheading = "What We are"
-heading = "We are dynamic team of creative people"
-subheading = "We are Perfect Solution"
+title = "What We are"
+header = "We are dynamic team of creative people"
 text = "We provide consulting services in the area of IFRS and management reporting, helpingcompanies to reach their highest level. We optimize business processes, making them easier."
+background_image = "/images/bg/home-7.jpg"
 [[props.link]]
 text = "Get started"
 url = "#"

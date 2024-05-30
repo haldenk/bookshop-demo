@@ -1,2 +1,3 @@
-{{ define "main" }} {{ range .Params.content_blocks }} {{ partial "bookshop" .
+{{ define "main" }} {{ range .Params.content_blocks }} {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+{{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} {{ partial "bookshop" .
 }} {{ end }} {{ end }}
