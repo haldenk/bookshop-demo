@@ -13,6 +13,11 @@ title = 'Megakit'
     name = "About"
     url = "/about/"
     weight = 2
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 6
   
 
 [module]
