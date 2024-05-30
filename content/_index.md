@@ -1,16 +1,18 @@
 ---
-title: "Home"
+title: Home
 content_blocks:
-  - _bookshop_name: "slider"
-    preheading: "Prepare for new future"
-    heading: "Our work is <br>presentation of our <br>capabilities."
-    background_image: "/images/bg/home-1.jpg"
+  - _bookshop_name: slider
+    preheading: Prepare for new future
+    heading: Our work is <br>presentation of our <br>capabilities.
+    background_image: /images/bg/home-1.jpg
     link:
-      text: "Get started"
-      url: "#"
-  - _bookshop_name: "intro"
-    preheading: "We are creative & expert people"
-    heading: "We work with business & provide solution to client with their business problem"
+      text: Get started
+      url: '#'
+  - _bookshop_name: intro
+    preheading: We are creative & expert people
+    heading: >-
+      We work with business & provide solution to client with their business
+      problem
     sections:
       - icon: "ti-desktop"
         heading: "Modern & Responsive design"
