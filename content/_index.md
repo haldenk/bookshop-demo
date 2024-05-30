@@ -7,7 +7,7 @@ content_blocks:
     background_image: /images/bg/home-1.jpg
     link:
       text: Get started
-      url: '#'
+      url: "#"
   - _bookshop_name: intro
     preheading: We are creative & expert people
     heading: >-
