@@ -12,6 +12,7 @@
   "dependencies": {
     "@bookshop/browser": "^3.10.0",
     "@bookshop/generate": "^3.10.0",
-    "@bookshop/hugo-engine": "^3.10.0"
+    "@bookshop/hugo-engine": "^3.10.0",
+    "lunr": "^2.3.9"
   }
 }

@@ -27,7 +27,7 @@ posts = ":section/:year/:month/:day/:title/"
     name = "Blog"
     url = "/blog/"
     weight = 6
-  
+
 
 [module]
 replacements = "local/component-library -> ../component-library"

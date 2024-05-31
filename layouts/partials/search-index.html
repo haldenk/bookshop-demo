@@ -1,0 +1,14 @@
+<script>
+  window.store = {
+
+      {{ range where .Site.Pages "Section" "blog" }}
+      "{{ .Permalink }}": {
+
+          "title": "{{ .Title }}",
+          "content": "{{ .Content | plainify | escapeJS }}",
+          "url": "{{ .Permalink }}",
+          "tags": [{{ range $index, $element := .Params.Tags }}{{ if $index }}, {{ end }}"{{ $element }}"{{ end }}]
+      }{{ if not (last) }},{{ end }}
+      {{ end }}
+  };
+</script>
