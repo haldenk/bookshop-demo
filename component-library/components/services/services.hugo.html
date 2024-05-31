@@ -1,12 +1,22 @@
 <section class="section service border-top">
   <div class="container">
     <div class="row">
-      {{ range .sections }}
+      {{ range $index, $section := .sections }}
       <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
         <div class="service-item">
-          <i class="ti-desktop"></i>
-          <h4 class="mb-3 editable">{{ .title }}</h4>
-          <p class="editable">{{ .text }}</p>
+          <i class="{{ $section.icon }}"></i>
+          <h4
+            class="mb-3 editable"
+            data-cms-bind="content_blocks[4].sections[{{$index}}].title"
+          >
+            {{ $section.title }}
+          </h4>
+          <p
+            class="editable"
+            data-cms-bind="content_blocks[4].sections[{{$index}}].text"
+          >
+            {{ $section.text }}
+          </p>
         </div>
       </div>
       {{ end }}
