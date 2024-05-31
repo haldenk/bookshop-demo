@@ -1,6 +1,15 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Megakit'
+Paginate = 6
+PaginatePath = "/"
+summaryLength = 10
+
+[taxonomies]
+category = "categories"
+
+[permalinks]
+posts = ":section/:year/:month/:day/:title/"
 
 [menu]
   [[menu.main]]

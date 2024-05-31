@@ -1,13 +1,11 @@
 ---
-date: 2024-06-24
-title: top 10 security mistakes magento users make
+date: 2020-01-20
+title: top 10 security mistakes magento 2 merchants make
 categories:
-  - Ecommerce
+  - Cybersecurity
 image_path: /images/blog/top-10-mistakes-magento.jpg
 author: Paul Byrne
 ---
-
-# TOP 10 SECURITY MISTAKES MAGENTO 2 MERCHANTS MAKE
 
 Online security is certainly a critical priority for online merchants. Security breaches can deliver a death knell to your business by tarnishing your reputation, damaging relationships with customers, causing you to lose your payment processor, increasing insurance costs and inflicting untold harm to your business.
 
