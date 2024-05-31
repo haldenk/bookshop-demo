@@ -7,7 +7,7 @@ content_blocks:
     background_image: /images/bg/home-1.jpg
     link:
       text: Get started
-      url: '#'
+      url: "#"
   - _bookshop_name: intro
     preheading: We are creative & expert people
     heading: >-
@@ -30,29 +30,22 @@ content_blocks:
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
           ducimus.
   - _bookshop_name: about
-    preheading: What We are
-    heading: We are dynamic team of creative people
-    subheading: We are Perfect Solution
-    text: >-
-      We provide consulting services in the area of IFRS and management
-      reporting, helpingcompanies to reach their highest level. We optimize
-      business processes, making them easier.
     link:
       text: Get started
-      url: '#'
+      url: "#"
   - _bookshop_name: counter
     sections:
       - icon: ti-desktop
-        number: '1730'
+        number: "1730"
         stat: projects done
       - icon: ti-desktop
-        number: '125'
+        number: "125"
         stat: Users worldwide
       - icon: ti-desktop
-        number: '39'
+        number: "39"
         stat: available countries
       - icon: ti-desktop
-        number: '14'
+        number: "14"
         stat: Awards
   - _bookshop_name: services
     sections:
@@ -92,7 +85,7 @@ content_blocks:
   - _bookshop_name: cta
     title: Prepare for new future
     header: Entrust Your Project to Our Best Team of Professionals
-    subheader: 'Have any project on mind? For immidiate support :'
+    subheader: "Have any project on mind? For immidiate support :"
     number: +23 876 65 455
   - _bookshop_name: testimonial
     title: Clients testimonial
