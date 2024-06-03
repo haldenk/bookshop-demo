@@ -2,8 +2,6 @@
 title: Home
 content_blocks:
   - _bookshop_name: slider
-    preheading: Prepare for new futuree
-    heading: Our work is <br>presentation of our <br>capabilities.
     background_image: /images/bg/home-1.jpg
     link:
       text: Get started
