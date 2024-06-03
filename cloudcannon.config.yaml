@@ -1,4 +1,44 @@
 collections_config:
   pages:
+    output: true
+    icon: notes
     _enabled_editors:
       - visual
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_editables:
+  text:
+    allow_custom_markup: true
+    remove_custom_markup: false
+    bold: true
+    copyformatting:
+    italic: true
+    link: true
+    paths:
+    redo: true
+    removeformat:
+    strike:
+    subscript:
+    superscript:
+    underline: true
+    undo: true
+  image:
+    expandable: true
+    height:
+    image_size_attributes: true
+    mime_type:
+    paths:
+      uploads:
+      uploads_filename:
+      uploads_use_relative_path:
+      static:
+      dam_uploads:
+      dam_uploads_filename:
+      dam_static:
+    resize_style: contain
+    width:
+data_config: {}
+editor:
+  default_path:
+timezone: Etc/UTC
