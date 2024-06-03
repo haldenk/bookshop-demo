@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(window.location.search);
   const query = params.get("query");
 
+  // Log the query parameter
+  console.log("Query:", query);
+
   // Perform a search if there is a query
   if (query) {
     // Retain the search input in the form when displaying results
@@ -30,25 +33,36 @@ document.addEventListener("DOMContentLoaded", function () {
       searchInput.setAttribute("value", query);
     }
 
+    // Initialize the lunr index
     const idx = lunr(function () {
       this.ref("id");
       this.field("title", { boost: 15 });
       this.field("tags");
       this.field("content", { boost: 10 });
 
+      // Log and add each document to the index
       for (const key in window.store) {
-        this.add({
+        const doc = {
           id: key,
           title: window.store[key].title,
-          tags: window.store[key].category,
+          tags: window.store[key].tags,
           content: window.store[key].content,
-        });
+        };
+        console.log("Adding document to index:", doc);
+        this.add(doc);
       }
     });
 
+    // Log the search index
+    console.log("Search Index:", idx);
+
     // Perform the search
     const results = idx.search(query);
-    // Update the list with results
+
+    
+    console.log("Search Results:", results);
+
+    
     displayResults(results, window.store);
   }
 });
