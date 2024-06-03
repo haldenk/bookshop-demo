@@ -111,7 +111,6 @@ Background
 
 ##### Pinterest
 
-> {{< div class="flex" style="background: no-repeat center/cover url('./pinterestbg.jpg');padding:8vw;color:#fff;font-weight:700;" >}}
 > “Elixir saved Pinterest over $2 million per year in server costs”
 
 “The performance and reliability of the systems went up despite running on drastically less hardware”
