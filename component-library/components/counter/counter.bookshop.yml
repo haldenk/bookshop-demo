@@ -9,23 +9,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  sections:
-    - icon: ""
-      number: ""
-      stat: ""
-
-# Overrides any fields in the blueprint when viewing this component in the component browser
-preview:
-  sections:
-    - icon: ti-desktop
-      number: "1730"
-      stat: Projects Done
-    - icon: ti-desktop
-      number: "39"
-      stat: Available countries
-    - icon: ti-desktop
-      number: "14"
-      stat: Awards Done
+  icon: ti-desktop
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}

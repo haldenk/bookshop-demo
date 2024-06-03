@@ -6,9 +6,5 @@ icon = "title"
 tags = []
 
 
-[props]
-title = "We create for you"
-header = "Entrust Your Project to Our Best Team of Professionals"
-subheader = "Have any project on mind? For immidiate support :"
-number = "+23 876 65 455"
+
 

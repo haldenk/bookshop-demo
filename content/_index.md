@@ -32,19 +32,7 @@ content_blocks:
       text: Get started
       url: "#"
   - _bookshop_name: counter
-    sections:
-      - icon: ti-desktop
-        number: "1730"
-        stat: projects done
-      - icon: ti-desktop
-        number: "125"
-        stat: Users worldwide
-      - icon: ti-desktop
-        number: "39"
-        stat: available countries
-      - icon: ti-desktop
-        number: "14"
-        stat: Awards
+    icon: ti-desktop
   - _bookshop_name: services
     sections:
       - icon: ti-desktop
@@ -81,10 +69,6 @@ content_blocks:
           A digital agency isn't here to replace your internal team, we're here
           to partner
   - _bookshop_name: cta
-    title: Prepare for new future
-    header: Entrust Your Project to Our Best Team of Professionals
-    subheader: "Have any project on mind? For immidiate support :"
-    number: +23 876 65 455
   - _bookshop_name: testimonial
     title: Clients testimonial
     header: Check out what our clients have to say about us
