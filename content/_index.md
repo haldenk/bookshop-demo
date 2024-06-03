@@ -7,26 +7,9 @@ content_blocks:
       text: Get started
       url: "#"
   - _bookshop_name: intro
-    preheading: We are creative & expert people
-    heading: >-
-      We work with business & provide solution to client with their business
-      problem
-    sections:
-      - icon: ti-desktop
-        heading: Modern & Responsive design
-        text: >-
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
-          ducimus.
-      - icon: ti-medall
-        heading: Awarded licensed company
-        text: >-
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
-          ducimus.
-      - icon: ti-layers
-        heading: Build your website Professionally
-        text: >-
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
-          ducimus.
+    icon1: ti-desktop
+    icon2: ti-medall
+    icon3: ti-layers
   - _bookshop_name: about
     link:
       text: Get started

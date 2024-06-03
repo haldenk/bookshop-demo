@@ -6,9 +6,7 @@ icon = "title"
 tags = []
 
 [props]
-title = "What We are"
-header = "We are dynamic team of creative people"
-text = "We provide consulting services in the area of IFRS and management reporting, helpingcompanies to reach their highest level. We optimize business processes, making them easier."
+
 background_image = "/images/bg/home-7.jpg"
 [[props.link]]
 text = "Get started"
