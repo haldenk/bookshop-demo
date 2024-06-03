@@ -1,4 +1,26 @@
 collections_config:
+  blog:
+    name: "Blog Posts"
+    files:
+      - name: "Blog Posts"
+        label: "Blog Posts"
+        file: "{{slug}}.md"
+        path: "content/blog"
+        fields:
+          - name: "title"
+            label: "Title"
+            widget: "string"
+          - name: "date"
+            label: "Date"
+            widget: "datetime"
+          - name: "image"
+            label: "Image"
+            widget: "image"
+            media_folder: "static/images/blog" # Folder where images are stored
+            public_folder: "/images/blog" # URL path for the images
+          - name: "body"
+            label: "Body"
+            widget: "markdown"
   pages:
     output: true
     icon: notes
