@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy-lunr": "cp node_modules/lunr/lunr.js static/js/"
   },
   "keywords": [],
   "author": "",

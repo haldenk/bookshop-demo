@@ -3,11 +3,12 @@
   action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}'
   method="get"
 >
-  <label hidden for="search-input">Search</label>
+  <label hidden for="search-input">Search site</label>
   <input
     type="text"
     id="search-input"
     name="query"
-    placeholder="🔍 Type here to search"
+    placeholder="Type here to search"
   />
+  <input type="submit" value="search" />
 </form>

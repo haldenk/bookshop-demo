@@ -1,11 +1,9 @@
 {{ define "main" }}
-  <!-- include our search form -->
-  {{ partial "search-form.html" . }}
-  
-  <h2 id="search-title">{{ .Title }}</h2>
+{{ partial "search-form.html" . }}
 
-  <!-- element to place search results -->
-  <ul id="results">
-    <li>Search results would be shown here.</li>
-  </ul>
+<ul id="results">
+    <li>
+        Enter a keyword above to search this site.
+    </li>
+</ul>
 {{ end }}
