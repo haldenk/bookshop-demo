@@ -119,7 +119,7 @@ pages:
     - data
   disable_add: false
   disable_add_folder: false
-  disable_file_actions: true
+  disable_file_actions: false
   fields:
     - name: components
       label: Components
