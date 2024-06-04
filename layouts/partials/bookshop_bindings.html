@@ -1,4 +1,0 @@
-{{ $content_blocks := .content_blocks }}
-{{ range $i, $block := $content_blocks }}
-  {{ partial (printf "components/%s/%s.hugo.html" $block._bookshop_name $block._bookshop_name) $block }}
-{{ end }}
