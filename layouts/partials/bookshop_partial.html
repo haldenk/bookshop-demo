@@ -1,0 +1,4 @@
+{{/* bookshop_partial.html */}} {{ $page := index . 0 }} {{ $content_blocks :=
+index . 1 }} {{ range $i, $block := $content_blocks }} {{ $block := index
+$content_blocks $i }} {{ partial (printf "components/%s/%s.hugo.html"
+$block._bookshop_name $block._bookshop_name) $block }} {{ end }}
