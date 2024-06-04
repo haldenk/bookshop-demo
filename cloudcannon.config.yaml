@@ -6,6 +6,14 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+  pages:
+    output: true
+    name: Pages
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+
 _editables:
   text:
     allow_custom_markup: true
@@ -26,7 +34,7 @@ _editables:
     image_size_attributes: true
     paths:
       uploads: static/images/blog
-      uploads_filename: '{{slug}}-{{filename}}'
+      uploads_filename: "{{slug}}-{{filename}}"
       uploads_use_relative_path: false
       static: /images/blog
     resize_style: contain
@@ -106,10 +114,12 @@ _editables:
     underline: true
     undo: true
     width:
+
 data_config: {}
 editor:
   default_path: content/posts
 timezone: Etc/UTC
+
 pages:
   output: true
   icon: notes
