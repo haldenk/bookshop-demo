@@ -1,6 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Megakit'
+_enabled_editors = ["visual", "content"]
 Paginate = 6
 PaginatePath = "/"
 summaryLength = 10
