@@ -1,24 +1,27 @@
-<section class="slider" {{ if ne .background_image "" }}
-style="background-image: url('{{ .background_image }}')" {{ end }}>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-9 col-md-10">
-      <div class="block">
-        <span class="d-block mb-3 text-white text-capitalize editable">
-          Rise above the competition with Razoyo on your team!
-        </span>
-        <h1 class="animated fadeInUp mb-5 editable">
-          Developers of Dynamic Digital Experiences
-        </h1>
-        <a
-          href="{{ with .link.url }}{{ . }}{{ else }}#{{ end }}"
-          class="btn btn-main animated fadeInUp btn-round-full"
-          aria-label="Get started"
-          >{{ .link.text | markdownify }}<i
-            class="btn-icon fa fa-angle-right ml-2"
-          ></i
-        ></a>
+<section
+  class="slider"
+  style="background-image: url('{{ .background_image }}')"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-md-10">
+        <div class="block">
+          <span class="d-block mb-3 text-white text-capitalize editable">
+            Rise above the competition with Razoyo on your team!
+          </span>
+          <h1 class="animated fadeInUp mb-5 editable">
+            Developers of Dynamic Digital Experiences
+          </h1>
+          <a
+            href="{{ .link.url }}"
+            class="btn btn-main animated fadeInUp btn-round-full"
+            aria-label="Get started"
+            >{{ .link.text | markdownify }}<i
+              class="btn-icon fa fa-angle-right ml-2"
+            ></i
+          ></a>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>

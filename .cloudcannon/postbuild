@@ -1,3 +1,4 @@
-#!/bin/bash
-npm install
-npx @bookshop/generate
+#!/usr/bin/env bash
+
+npm i
+npx "@bookshop/generate"
