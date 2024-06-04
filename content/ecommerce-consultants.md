@@ -9,4 +9,9 @@ content_blocks:
     link:
       text: Get started
       url: '#'
+  - _bookshop_name: start
+    background_image: /uploads/froggy.jpg
+    link:
+      text: Hellur i am frog
+      url: ''
 ---

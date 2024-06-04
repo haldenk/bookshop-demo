@@ -88,10 +88,18 @@ content_blocks:
     title: hello world
     header: hi there
     sections:
+      - icon: ''
+        text: ''
+        name: ''
+        position: ''
       - icon: fa-moon
         text: hi there
         name: Emily
         position: Marketing
+  - _bookshop_name: testimonial
+    title: ''
+    header: ''
+    sections:
       - icon: ''
         text: ''
         name: ''
