@@ -21,16 +21,6 @@ collections_config:
           - name: "body"
             label: "Body"
             widget: "markdown"
-          - name: "components"
-            label: "Components"
-            widget: "list"
-            types:
-              - name: About
-                label: "About Section"
-                file: "component-library/components/about/about.bookshop.yaml"
-              - name: Slider
-                label: "Slider Component"
-                file: "component-library/components/slider/slider.bookshop.yaml"
 
 pages:
   output: true
@@ -40,6 +30,35 @@ pages:
   disable_add: false
   disable_add_folder: false
   disable_file_actions: false
+  fields:
+    - name: "components"
+      label: "Components"
+      widget: "list"
+      types:
+        - name: About
+          label: "About Section"
+          file: "component-library/components/about/about.bookshop.yml"
+        - name: Counter
+          label: "Counter Component"
+          file: "component-library/components/counter/counter.bookshop.yml"
+        - name: CTA
+          label: "CTA Component"
+          file: "component-library/components/cta/cta.bookshop.yml"
+        - name: Intro
+          label: "Intro Component"
+          file: "component-library/components/intro/intro.bookshop.yml"
+        - name: Services
+          label: "Services Section"
+          file: "component-library/components/services/services.bookshop.yml"
+        - name: Slider
+          label: "Slider Component"
+          file: "component-library/components/slider/slider.bookshop.yml"
+        - name: Start
+          label: "Start Component"
+          file: "component-library/components/start/start.bookshop.yml"
+        - name: Testimonial
+          label: "Testimonial Component"
+          file: "component-library/components/testimonial/testimonial.bookshop.yml"
 
 _editables:
   text:
@@ -71,29 +90,3 @@ data_config: {}
 editor:
   default_path: "content/posts"
 timezone: Etc/UTC
-
-components:
-  - name: About
-    label: "About Section"
-    file: "component-library/components/about/about.bookshop.yml"
-  - name: Counter
-    label: "Counter Component"
-    file: "component-library/components/counter/counter.bookshop.yml"
-  - name: CTA
-    label: "cta Component"
-    file: "component-library/components/cta/cta.bookshop.yml"
-  - name: Intro
-    label: "Intro Component"
-    file: "component-library/components/intro/intro.bookshop.yml"
-  - name: Services
-    label: "Services Section"
-    file: "component-library/components/services/services.bookshop.yml"
-  - name: Slider
-    label: "Slider Component"
-    file: "component-library/components/slider/slider.bookshop.yml"
-  - name: Start
-    label: "Start Component"
-    file: "component-library/components/start/start.bookshop.yml"
-  - name: Testimonial
-    label: "Testimonial Component"
-    file: "component-library/components/testimonial/testimonial.bookshop.yml"
