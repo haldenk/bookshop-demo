@@ -61,3 +61,11 @@ data_config: {}
 editor:
   default_path: "content/posts" # Default path for the editor
 timezone: Etc/UTC
+
+components:
+  - name: About
+    label: "about section"
+    file: "component-library/components/about/about.config.yml"
+  - name: Slider
+    label: "Slider Component"
+    file: "component-library/components/slider/slider.config.yml"
