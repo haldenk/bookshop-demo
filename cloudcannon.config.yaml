@@ -1,65 +1,11 @@
 collections_config:
   posts:
-    name: "Posts"
-    files:
-      - name: "Posts"
-        label: "Posts"
-        file: "{{slug}}.md"
-        path: "content/posts"
-        fields:
-          - name: "title"
-            label: "Title"
-            widget: "string"
-          - name: "date"
-            label: "Date"
-            widget: "datetime"
-          - name: "image"
-            label: "Image"
-            widget: "image"
-            media_folder: "static/images/blog" # Folder where images are stored
-            public_folder: "/images/blog" # URL path for the images
-          - name: "body"
-            label: "Body"
-            widget: "markdown"
-
-pages:
-  output: true
-  icon: notes
-  _enabled_editors:
-    - visual
-  disable_add: false
-  disable_add_folder: false
-  disable_file_actions: false
-  fields:
-    - name: "components"
-      label: "Components"
-      widget: "list"
-      types:
-        - name: About
-          label: "About Section"
-          file: "component-library/components/about/about.bookshop.yml"
-        - name: Counter
-          label: "Counter Component"
-          file: "component-library/components/counter/counter.bookshop.yml"
-        - name: CTA
-          label: "CTA Component"
-          file: "component-library/components/cta/cta.bookshop.yml"
-        - name: Intro
-          label: "Intro Component"
-          file: "component-library/components/intro/intro.bookshop.yml"
-        - name: Services
-          label: "Services Section"
-          file: "component-library/components/services/services.bookshop.yml"
-        - name: Slider
-          label: "Slider Component"
-          file: "component-library/components/slider/slider.bookshop.yml"
-        - name: Start
-          label: "Start Component"
-          file: "component-library/components/start/start.bookshop.yml"
-        - name: Testimonial
-          label: "Testimonial Component"
-          file: "component-library/components/testimonial/testimonial.bookshop.yml"
-
+    output: true
+    name: Posts
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 _editables:
   text:
     allow_custom_markup: true
@@ -79,14 +25,127 @@ _editables:
     expandable: true
     image_size_attributes: true
     paths:
-      uploads: "static/images/blog"
-      uploads_filename: "{{slug}}-{{filename}}"
+      uploads: static/images/blog
+      uploads_filename: '{{slug}}-{{filename}}'
       uploads_use_relative_path: false
-      static: "/images/blog"
+      static: /images/blog
     resize_style: contain
-
+  block:
+    allow_custom_markup: false
+    remove_custom_markup: false
+    blockquote:
+    bold:
+    bulletedlist:
+    center:
+    code:
+    copyformatting:
+    embed:
+    expandable:
+    format: p h3
+    height:
+    horizontalrule:
+    image:
+    image_size_attributes: true
+    indent:
+    italic:
+    justify:
+    left:
+    link:
+    mime_type:
+    numberedlist:
+    outdent:
+    paths:
+    redo: true
+    removeformat:
+    resize_style: contain
+    right:
+    snippet:
+    strike:
+    styles:
+    subscript:
+    superscript:
+    table:
+    underline:
+    undo: true
+    width:
+  content:
+    allow_custom_markup: false
+    remove_custom_markup: false
+    blockquote: true
+    bold: true
+    bulletedlist: true
+    center:
+    code:
+    copyformatting:
+    embed: true
+    expandable:
+    format:
+    height:
+    horizontalrule: true
+    image:
+    image_size_attributes: true
+    indent:
+    italic: true
+    justify:
+    left:
+    link: true
+    mime_type:
+    numberedlist: true
+    outdent:
+    paths:
+    redo: true
+    removeformat:
+    resize_style: contain
+    right:
+    snippet: true
+    strike: true
+    styles:
+    subscript: true
+    superscript: true
+    table: true
+    underline: true
+    undo: true
+    width:
 data_config: {}
-
 editor:
-  default_path: "content/posts"
+  default_path: content/posts
 timezone: Etc/UTC
+pages:
+  output: true
+  icon: notes
+  _enabled_editors:
+    - visual
+    - content
+    - data
+  disable_add: false
+  disable_add_folder: false
+  disable_file_actions: true
+  fields:
+    - name: components
+      label: Components
+      widget: list
+      types:
+        - name: About
+          label: About Section
+          file: component-library/components/about/about.bookshop.yml
+        - name: Counter
+          label: Counter Component
+          file: component-library/components/counter/counter.bookshop.yml
+        - name: CTA
+          label: CTA Component
+          file: component-library/components/cta/cta.bookshop.yml
+        - name: Intro
+          label: Intro Component
+          file: component-library/components/intro/intro.bookshop.yml
+        - name: Services
+          label: Services Section
+          file: component-library/components/services/services.bookshop.yml
+        - name: Slider
+          label: Slider Component
+          file: component-library/components/slider/slider.bookshop.yml
+        - name: Start
+          label: Start Component
+          file: component-library/components/start/start.bookshop.yml
+        - name: Testimonial
+          label: Testimonial Component
+          file: component-library/components/testimonial/testimonial.bookshop.yml
