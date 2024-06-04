@@ -5,15 +5,15 @@ content_blocks:
     background_image: /images/bg/home-1.jpg
     link:
       text: Get started
-      url: "#"
+      url: '#'
+  - _bookshop_name: about
+    link:
+      text: Get started
+      url: '#'
   - _bookshop_name: intro
     icon1: ti-desktop
     icon2: ti-medall
     icon3: ti-layers
-  - _bookshop_name: about
-    link:
-      text: Get started
-      url: "#"
   - _bookshop_name: counter
     icon: ti-desktop
   - _bookshop_name: services
@@ -84,4 +84,16 @@ content_blocks:
           recusandae .
         name: James Watson
         position: Excutive Director,themefisher
+  - _bookshop_name: testimonial
+    title: hello world
+    header: hi there
+    sections:
+      - icon: ''
+        text: ''
+        name: ''
+        position: ''
+      - icon: ''
+        text: ''
+        name: ''
+        position: ''
 ---
