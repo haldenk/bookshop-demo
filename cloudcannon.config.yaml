@@ -21,6 +21,16 @@ collections_config:
           - name: "body"
             label: "Body"
             widget: "markdown"
+          - name: "components"
+            label: "Components"
+            widget: "list"
+            types:
+              - name: About
+                label: "About Section"
+                file: "component-library/components/about/about.bookshop.yaml"
+              - name: Slider
+                label: "Slider Component"
+                file: "component-library/components/slider/slider.bookshop.yaml"
 
 pages:
   output: true
@@ -50,22 +60,22 @@ _editables:
     expandable: true
     image_size_attributes: true
     paths:
-      uploads: "static/images/blog" # Folder for image uploads
-      uploads_filename: "{{slug}}-{{filename}}" # Filename format
+      uploads: "static/images/blog" 
+      uploads_filename: "{{slug}}-{{filename}}" 
       uploads_use_relative_path: false
-      static: "/images/blog" # Public URL path for the images
+      static: "/images/blog" 
     resize_style: contain
 
 data_config: {}
 
 editor:
-  default_path: "content/posts" # Default path for the editor
+  default_path: "content/posts"
 timezone: Etc/UTC
 
 components:
   - name: About
-    label: "about section"
-    file: "component-library/components/about/about.config.yml"
+    label: "About Section"
+    file: "component-library/components/about/about.bookshop.yaml"
   - name: Slider
     label: "Slider Component"
-    file: "component-library/components/slider/slider.config.yml"
+    file: "component-library/components/slider/slider.bookshop.yaml"
