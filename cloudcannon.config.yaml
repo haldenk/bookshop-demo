@@ -60,10 +60,10 @@ _editables:
     expandable: true
     image_size_attributes: true
     paths:
-      uploads: "static/images/blog" 
-      uploads_filename: "{{slug}}-{{filename}}" 
+      uploads: "static/images/blog"
+      uploads_filename: "{{slug}}-{{filename}}"
       uploads_use_relative_path: false
-      static: "/images/blog" 
+      static: "/images/blog"
     resize_style: contain
 
 data_config: {}
@@ -75,7 +75,7 @@ timezone: Etc/UTC
 components:
   - name: About
     label: "About Section"
-    file: "component-library/components/about/about.bookshop.yaml"
+    file: "component-library/components/about/about.bookshop.yml"
   - name: Slider
     label: "Slider Component"
-    file: "component-library/components/slider/slider.bookshop.yaml"
+    file: "component-library/components/slider/slider.bookshop.yml"
