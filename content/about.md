@@ -16,6 +16,6 @@ content_blocks:
     icon: ti-desktop
   - _bookshop_name: about
     link:
-      - text: link
-        url: https://www.razoyo.com/
+      -text: Get started
+      url: "#"
 ---
