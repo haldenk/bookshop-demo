@@ -11,5 +11,5 @@ content_blocks:
     background_image: /uploads/img-0231.jpg
     link:
       - text: link
-        url: '#'
+        url: https://www.razoyo.com/
 ---
