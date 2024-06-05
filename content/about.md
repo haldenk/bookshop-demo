@@ -16,5 +16,5 @@ content_blocks:
     background_image: /images/bg/counter.jpg
     link:
       - text: check it out!
-        url: https://www.razoyo.com/
+        url: 'https://www.razoyo.com/'
 ---
