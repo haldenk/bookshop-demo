@@ -6,4 +6,14 @@ content_blocks:
     background_image: /images/bg/home-2.jpg
   - _bookshop_name: counter
     icon: ti-desktop
+  - _bookshop_name: intro
+    preheading: ''
+    heading: ''
+    icon: ''
+    icon1: ti-desktop
+    icon2: ti-medall
+    icon3: ti-layers
+  - _bookshop_name: slider
+    background_image: /uploads/img-0231.jpg
+    link: []
 ---
