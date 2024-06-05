@@ -13,7 +13,4 @@ content_blocks:
     icon1: ti-desktop
     icon2: ti-medall
     icon3: ti-layers
-  - _bookshop_name: slider
-    background_image: /uploads/img-0231.jpg
-    link: []
 ---
