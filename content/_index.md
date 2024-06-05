@@ -53,4 +53,9 @@ content_blocks:
           to partner
   - _bookshop_name: cta
   - _bookshop_name: testimonial
+  - _bookshop_name: content
+    content_html: >-
+      <p>For more infos, check out the <a target="_blank"
+      href="https://github.com/CloudCannon/hugo-bookshop-starter#readme">readme</a></p>
+    type: standard
 ---

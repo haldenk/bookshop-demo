@@ -1,0 +1,11 @@
+<div class="c-title">
+    {{ range .tags }}
+        {{ partial "bookshop" (slice "tag" .) }}
+    {{ end }}
+    <h1 class="c-title__title">
+        {{ .title }}
+    </h1>
+    {{ with .content }}
+        {{ partial "bookshop" (slice "content" .) }}
+    {{ end }}
+</div>
