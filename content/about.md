@@ -7,7 +7,9 @@ content_blocks:
   - _bookshop_name: counter
     icon: ti-desktop
   - _bookshop_name: about
-    link: []
+    link:
+      -text: Get started
+      url: https://github.com
   - _bookshop_name: content
     content_html: <p>yes</p><p></p>
 ---

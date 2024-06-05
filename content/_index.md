@@ -5,11 +5,11 @@ content_blocks:
     background_image: /images/bg/home-1.jpg
     link:
       text: Get started
-      url: "#"
+      url: "https://github.com"
   - _bookshop_name: about
     link:
       -text: Get started
-      url: "#"
+      url: "https://github.com"
   - _bookshop_name: intro
     icon1: ti-desktop
     icon2: ti-medall
