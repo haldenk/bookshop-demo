@@ -17,5 +17,5 @@ content_blocks:
   - _bookshop_name: about
     link:
       - text: link
-        url: '#'
+        url: https://www.razoyo.com/
 ---
