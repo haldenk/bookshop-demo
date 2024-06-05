@@ -35,7 +35,7 @@ FACEBOOK: https://www.facebook.com/themefisher
     />
     <meta name="author" content="Themefisher" />
     <meta name="generator" content="Themefisher Html5 Agency Template v1.0" />
-
+    <link href="/css/main.css" rel="stylesheet" />
     <!-- bootstrap.min css -->
     <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css" />
     <!-- Icon Font Css -->
@@ -97,11 +97,11 @@ FACEBOOK: https://www.facebook.com/themefisher
       </div>
       {{ partial "nav.html" . }}
     </header>
-      <!-- Loop through any structures in the front-matter and render them -->
-      {{ partial "bookshop_bindings" `.Params.content_blocks` }}
-      {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
-      <!-- Render any additional page content below the page's content blocks -->
-      {{ block "main" . }}{{ end }}
+    <!-- Loop through any structures in the front-matter and render them -->
+    {{ partial "bookshop_bindings" `.Params.content_blocks` }} {{ partial
+    "bookshop_partial" (slice "page" .Params.content_blocks) }}
+    <!-- Render any additional page content below the page's content blocks -->
+    {{ block "main" . }}{{ end }}
 
     <footer class="footer section">
       <div class="container">
