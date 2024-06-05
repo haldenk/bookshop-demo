@@ -5,12 +5,15 @@ content_blocks:
     background_image: /images/bg/home-1.jpg
     link:
       text: Get started
-      url: "https://github.com"
+      url: https://github.com
   - _bookshop_name: about
     link:
-      -text: Get started
-      url: "https://github.com"
+      '-text': Get started
+      url: https://github.com
   - _bookshop_name: intro
+    preheading: ''
+    heading: ''
+    icon: ''
     icon1: ti-desktop
     icon2: ti-medall
     icon3: ti-layers
@@ -51,11 +54,5 @@ content_blocks:
         text: >-
           A digital agency isn't here to replace your internal team, we're here
           to partner
-  - _bookshop_name: cta
   - _bookshop_name: testimonial
-  - _bookshop_name: content
-    content_html: >-
-      <p>For more infos, check out the <a target="_blank"
-      href="https://github.com/CloudCannon/hugo-bookshop-starter#readme">readme</a></p>
-    type: standard
 ---
