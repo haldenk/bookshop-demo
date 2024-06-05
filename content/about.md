@@ -1,4 +1,4 @@
 ---
 title: About
-content_blocks: []
+content_blocks:
 ---
