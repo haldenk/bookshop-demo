@@ -9,5 +9,7 @@ content_blocks:
     type: standard
   - _bookshop_name: slider
     background_image: /uploads/img-0231.jpg
-    link: []
+    link:
+      - text: link
+        url: '#'
 ---
