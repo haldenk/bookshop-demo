@@ -11,5 +11,5 @@ content_blocks:
     background_image: /images/bg/home-1.jpg
     link:
       text: Get started
-      url: "#"
+      url: https://www.razoyo.com/
 ---
