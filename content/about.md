@@ -9,5 +9,9 @@ content_blocks:
     type: standard
   - _bookshop_name: slider
     background_image: /uploads/img-0231.jpg
-    link: []
+    - _bookshop_name: slider
+    background_image: /images/bg/home-1.jpg
+    link:
+      text: Get started
+      url: "#"
 ---
