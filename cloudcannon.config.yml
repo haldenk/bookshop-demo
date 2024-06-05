@@ -1,0 +1,283 @@
+paths:
+  data: data
+  collections: content
+  includes: layouts
+  layouts: layouts
+  static: static
+  uploads: static/uploads
+  source: ''
+  archetypes: archetypes
+  assets: assets
+  content: content
+  pages: content
+  publish: public
+  config: ''
+collections_config:
+  posts:
+    path: content/posts
+    output: true
+    filter:
+    name: Posts
+    description: ''
+    icon: notes
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+  pages:
+    path: content
+    output: true
+    filter: strict
+    parse_branch_index: true
+    name:
+    description: ''
+    icon: notes
+    _editables:
+    _enabled_editors:
+      - visual
+    _inputs:
+    _select_data:
+    _structures:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+  data:
+    path: data
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_enabled_editors:
+  - visual
+  - content
+_structures:
+  content_blocks:
+    style: select
+    id_key: _bookshop_name
+    values:
+      - value:
+          _bookshop_name: about
+          link: []
+        label: About
+        description: Main page about section
+        icon: title
+        tags: []
+        _inputs:
+          link:
+            type: array
+            options:
+              structures:
+                style: select
+                values:
+                  - label: Link
+                    icon: add_box
+                    value:
+                      text: ''
+                      url: ''
+                    _inputs:
+            cascade: true
+      - value:
+          _bookshop_name: content
+          content_html: ''
+        label: Content
+        description: Generic rich content area
+        icon: wysiwyg
+        tags:
+          - Text
+        _inputs:
+          type:
+            type: auto
+            options:
+              values:
+                - standard
+                - note
+            cascade: true
+      - value:
+          _bookshop_name: counter
+          icon: ti-desktop
+        label: Counter
+        description: Counter section section
+        icon: receipt
+        tags: []
+        _inputs:
+      - value:
+          _bookshop_name: hero
+          title: Hello World!
+          background_image: /images/bg/home-2.jpg
+        label: Hero
+        description: hero block
+        icon: title
+        tags:
+          - Hero
+        _inputs:
+      - value:
+          _bookshop_name: intro
+          preheading: ''
+          heading: ''
+          icon: ''
+        label: Intro
+        description: Overview section
+        icon: receipt
+        tags: []
+        _inputs:
+      - value:
+          _bookshop_name: services
+          sections: []
+        label: Services
+        description: Services section
+        icon: receipt
+        tags: []
+        _inputs:
+          sections:
+            type: array
+            options:
+              structures:
+                style: select
+                values:
+                  - label: Section
+                    icon: add_box
+                    value:
+                      icon: ''
+                      title: ''
+                      text: ''
+                    _inputs:
+            cascade: true
+      - value:
+          _bookshop_name: slider
+          background_image: ''
+          link: []
+        label: Slider
+        description: Main page banner block
+        icon: title
+        tags: []
+        _inputs:
+          link:
+            type: array
+            options:
+              structures:
+                style: select
+                values:
+                  - label: Link
+                    icon: add_box
+                    value:
+                      text: ''
+                      url: ''
+                    _inputs:
+            cascade: true
+      - value:
+          _bookshop_name: testimonial
+        label: testimonial
+        description: Testimonial section
+        icon: receipt
+        tags: []
+        _inputs:
+_editables:
+  text:
+    allow_custom_markup: true
+    remove_custom_markup: false
+    bold: true
+    copyformatting: true
+    italic: true
+    link: true
+    redo: true
+    removeformat: true
+    strike: true
+    subscript: true
+    superscript: true
+    underline: true
+    undo: true
+  image:
+    expandable: true
+    image_size_attributes: true
+    paths:
+      uploads: static/images/blog
+      uploads_filename: '{{slug}}-{{filename}}'
+      uploads_use_relative_path: false
+      static: /images/blog
+    resize_style: contain
+  block:
+    allow_custom_markup: false
+    remove_custom_markup: false
+    blockquote:
+    bold:
+    bulletedlist:
+    center:
+    code:
+    copyformatting:
+    embed:
+    expandable:
+    format: p h3
+    height:
+    horizontalrule:
+    image:
+    image_size_attributes: true
+    indent:
+    italic:
+    justify:
+    left:
+    link:
+    mime_type:
+    numberedlist:
+    outdent:
+    paths:
+    redo: true
+    removeformat:
+    resize_style: contain
+    right:
+    snippet:
+    strike:
+    styles:
+    subscript:
+    superscript:
+    table:
+    underline:
+    undo: true
+    width:
+  content:
+    allow_custom_markup: false
+    remove_custom_markup: false
+    blockquote: true
+    bold: true
+    bulletedlist: true
+    center:
+    code:
+    copyformatting:
+    embed: true
+    expandable:
+    format:
+    height:
+    horizontalrule: true
+    image:
+    image_size_attributes: true
+    indent:
+    italic: true
+    justify:
+    left:
+    link: true
+    mime_type:
+    numberedlist: true
+    outdent:
+    paths:
+    redo: true
+    removeformat:
+    resize_style: contain
+    right:
+    snippet: true
+    strike: true
+    styles:
+    subscript: true
+    superscript: true
+    table: true
+    underline: true
+    undo: true
+    width:
+data_config: {}
+editor:
+  default_path: content/posts
+timezone: Etc/UTC
