@@ -12,4 +12,10 @@ content_blocks:
     link:
       text: Get started
       url: https://www.razoyo.com/
+  - _bookshop_name: counter
+    icon: ti-desktop
+  - _bookshop_name: about
+    link:
+      - text: link
+        url: '#'
 ---
