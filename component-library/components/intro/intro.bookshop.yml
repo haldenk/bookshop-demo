@@ -9,17 +9,14 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  preheading: ""
-  heading: ""
-  icon: ""
-
+  icon1: "ti-desktop"
+  icon2: "ti-medall"
+  icon3: "ti-layers"
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  preheading: We are creative & expert people
-  heading:
-    We work with business & provide solution to client with their business
-    problem
-  icon: ti-desktop
+  icon1: ti-desktop
+  icon2: ti-medall
+  icon3: ti-layers
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}
