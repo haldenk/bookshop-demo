@@ -1,3 +1,3 @@
-{{ define "main" }} {{ partial "hero" . }} {{ partial "bookshop_bindings" `(dict
-"content_html" .Params.note_html "type" "note")` }} {{ partial "bookshop" (slice
-"content" (dict "content_html" .Params.note_html "type" "note")) }} {{ end }}
+{{ define "main" }} {{ partial "bookshop_bindings" `(dict "content_html"
+.Params.note_html "type" "note")` }} {{ partial "bookshop" (slice "content"
+(dict "content_html" .Params.note_html "type" "note")) }} {{ end }}

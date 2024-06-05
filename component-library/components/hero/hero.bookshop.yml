@@ -3,23 +3,20 @@ spec:
   structures:
     - content_blocks
   label: Hero
-  description: Main page hero block
+  description: hero block
   icon: title
   tags:
     - Hero
-    - WYSIWYG
 
 # Defines the structure of this component, as well as the default values
 blueprint:
   title: Hello World!
-  content: bookshop:content
-  tags: [bookshop:tag]
+  background_image: /images/bg/home-2.jpg
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   title: Bookshop Hugo Starter Hero
+  background_image: /images/bg/home-2.jpg
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  title:
-    comment: Main page h1
