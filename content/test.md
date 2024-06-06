@@ -22,4 +22,11 @@ content_blocks:
       - icon: ti-layers
         title: service 3
         text: text for service three
+  - _bookshop_name: slider
+    preheading: preheading
+    heading: heading
+    background_image: /uploads/froggy.jpg
+    link:
+      text: visual editor docs
+      url: https://cloudcannon.com/documentation/articles/the-visual-editor/
 ---
