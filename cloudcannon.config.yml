@@ -5,13 +5,14 @@ paths:
   layouts: layouts
   static: static
   uploads: static/uploads
-  source: ''
+  source: ""
   archetypes: archetypes
   assets: assets
   content: content
   pages: content
   publish: public
-  config: ''
+  config: ""
+
 collections_config:
   pages:
     path: content
@@ -36,9 +37,11 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+
 _enabled_editors:
   - visual
   - content
+
 _structures:
   content_blocks:
     style: select
@@ -46,10 +49,10 @@ _structures:
     values:
       - value:
           _bookshop_name: about
-          preheading: ''
-          heading: ''
-          subheading: ''
-          text: ''
+          preheading: ""
+          heading: ""
+          subheading: ""
+          text: ""
           link: []
         label: About
         description: about section
@@ -65,8 +68,8 @@ _structures:
                   - label: Link
                     icon: add_box
                     value:
-                      text: ''
-                      url: ''
+                      text: ""
+                      url: ""
                     _inputs:
             cascade: true
       - value:
@@ -86,9 +89,9 @@ _structures:
                   - label: Section
                     icon: add_box
                     value:
-                      icon: ''
-                      number: ''
-                      stat: ''
+                      icon: ""
+                      number: ""
+                      stat: ""
                     _inputs:
             cascade: true
       - value:
@@ -128,19 +131,19 @@ _structures:
                   - label: Section
                     icon: add_box
                     value:
-                      icon: ''
-                      title: ''
-                      text: ''
+                      icon: ""
+                      title: ""
+                      text: ""
                     _inputs:
             cascade: true
       - value:
           _bookshop_name: slider
-          preheading: ''
-          heading: ''
-          background_image: ''
+          preheading: ""
+          heading: ""
+          background_image: ""
           link:
-            text: ''
-            url: ''
+            text: ""
+            url: ""
         label: Slider
         description: slider section
         icon: title
@@ -151,6 +154,17 @@ _structures:
         label: testimonial
         description: Testimonial section
         icon: receipt
+        tags: []
+        _inputs:
+      - value:
+          _bookshop_name: cta
+          title: ""
+          header: ""
+          subheader: ""
+          number: ""
+        label: CTA
+        description: CTA section
+        icon: title
         tags: []
         _inputs:
 timezone: Etc/UTC
