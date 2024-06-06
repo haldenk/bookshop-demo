@@ -53,18 +53,4 @@ content_blocks:
           A digital agency isn't here to replace your internal team, we're here
           to partner
   - _bookshop_name: testimonial
-  - _bookshop_name: about
-    link: []
-    preheading: ''
-    heading: ''
-    subheading: ''
-    text: ''
-  - _bookshop_name: about
-    link: []
-    preheading: ''
-    heading: ''
-    subheading: ''
-    text: ''
-  - _bookshop_name: about
-    link: []
 ---
