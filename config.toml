@@ -11,6 +11,10 @@ category = "categories"
 [permalinks]
 posts = ":section/:year/:month/:day/:title/"
 
+[archetypes]
+default = ["post.md"]
+
+
 [menu]
   [[menu.main]]
     identifier = "home"
