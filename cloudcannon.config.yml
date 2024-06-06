@@ -12,6 +12,7 @@ paths:
   pages: content
   publish: public
   config: ''
+
 collections_config:
   pages:
     path: content
@@ -36,6 +37,7 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+
 _structures:
   content_blocks:
     style: select
@@ -150,4 +152,28 @@ _structures:
         icon: receipt
         tags: []
         _inputs:
+      - value:
+          _bookshop_name: cta
+        label: CTA
+        description: CTA section
+        icon: title
+        tags: []
+        _inputs:
+          title:
+            type: text
+            label: Title
+          header:
+            type: text
+            label: Header
+          subheader:
+            type: text
+            label: Subheader
+          number:
+            type: text
+            label: Number
+
+_enabled_editors:
+  - visual
+  - content
+
 timezone: Etc/UTC
