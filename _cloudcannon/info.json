@@ -1,11 +1,7 @@
 {
   "name": "bookshop-demo",
   "site_path": "/",
-  "watch_paths": [
-    "/content",
-    "/layouts",
-    "/static"
-  ],
+  "watch_paths": ["/content", "/layouts", "/static"],
   "_structures": {
     "content_blocks": {
       "id_key": "_bookshop_name",
@@ -84,9 +80,7 @@
           "label": "Hero",
           "description": "hero block",
           "icon": "title",
-          "tags": [
-            "Hero"
-          ],
+          "tags": ["Hero"],
           "_inputs": {}
         },
         {
