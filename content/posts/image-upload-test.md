@@ -5,6 +5,7 @@ categories:
   - random
 image_path: /uploads/froggy.jpg
 author: Halden Kavanagh
+draft: false
 ---
 \## This is a sample blog post, where i have uploaded an image
 

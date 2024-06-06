@@ -5,6 +5,7 @@ categories:
   - Ecommerce
 image_path: /images/blog/certificates.jpg
 author: Paul Byrne
+draft: false
 ---
 
 ## What is a Stack?

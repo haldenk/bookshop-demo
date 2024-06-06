@@ -5,6 +5,7 @@ categories:
   - Ecommerce
 image_path: /images/blog/certificates.jpg
 author: Paul Byrne
+draft: false
 ---
 
 Starting a new business often involves addressing a problem you've identified in the world and believing you have the solution. The journey of a startup founder is an inspiring one, filled with dreams, passion, and a desire to make a positive impact. However, it's no secret that startups face numerous challenges, and one of the primary reasons for their failure is founders giving up. In this blog post, we'll explore the factors that contribute to startup failure and how your choice of technology stack can make a significant difference.

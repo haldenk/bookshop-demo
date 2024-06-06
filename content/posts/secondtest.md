@@ -5,6 +5,7 @@ categories:
   - Ecommerce
 image_path: /images/blog/certificates.jpg
 author: Paul Byrne
+draft: false
 ---
 
 ## 4 Easy Things You Can Do To Protect Your Privacy in 2024

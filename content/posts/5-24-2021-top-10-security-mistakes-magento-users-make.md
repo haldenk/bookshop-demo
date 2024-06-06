@@ -5,6 +5,7 @@ categories:
   - Cybersecurity
 image_path: /images/blog/top-10-mistakes-magento.jpg
 author: Paul Byrne
+draft: false
 ---
 
 Online security is certainly a critical priority for online merchants. Security breaches can deliver a death knell to your business by tarnishing your reputation, damaging relationships with customers, causing you to lose your payment processor, increasing insurance costs and inflicting untold harm to your business.

@@ -5,6 +5,7 @@ categories:
   - Ecommerce
 image_path: images/blog/top-10-mistakes-magento.jpg
 author: Paul Byrne
+draft: false
 ---
 
 # TOP 10 SECURITY MISTAKES MAGENTO 2 MERCHANTS MAKE
