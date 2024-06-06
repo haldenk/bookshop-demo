@@ -1,0 +1,156 @@
+paths:
+  data: data
+  collections: content
+  includes: layouts
+  layouts: layouts
+  static: static
+  uploads: static/uploads
+  source: ''
+  archetypes: archetypes
+  assets: assets
+  content: content
+  pages: content
+  publish: public
+  config: ''
+collections_config:
+  pages:
+    path: content
+    output: true
+    filter: strict
+    parse_branch_index: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  posts:
+    path: content/posts
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  data:
+    path: data
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_enabled_editors:
+  - visual
+  - content
+_structures:
+  content_blocks:
+    style: select
+    id_key: _bookshop_name
+    values:
+      - value:
+          _bookshop_name: about
+          preheading: ''
+          heading: ''
+          subheading: ''
+          text: ''
+          link: []
+        label: About
+        description: about section
+        icon: title
+        tags: []
+        _inputs:
+          link:
+            type: array
+            options:
+              structures:
+                style: select
+                values:
+                  - label: Link
+                    icon: add_box
+                    value:
+                      text: ''
+                      url: ''
+                    _inputs:
+            cascade: true
+      - value:
+          _bookshop_name: counter
+          sections: []
+        label: Counter
+        description: Counter section
+        icon: receipt
+        tags: []
+        _inputs:
+          sections:
+            type: array
+            options:
+              structures:
+                style: select
+                values:
+                  - label: Section
+                    icon: add_box
+                    value:
+                      icon: ''
+                      number: ''
+                      stat: ''
+                    _inputs:
+            cascade: true
+      - value:
+          _bookshop_name: hero
+          title: Hello World!
+          background_image: /images/bg/home-2.jpg
+        label: Hero
+        description: hero block
+        icon: title
+        tags:
+          - Hero
+        _inputs:
+      - value:
+          _bookshop_name: intro
+          icon1: ti-desktop
+          icon2: ti-medall
+          icon3: ti-layers
+        label: Intro
+        description: Overview section
+        icon: receipt
+        tags: []
+        _inputs:
+      - value:
+          _bookshop_name: services
+          sections: []
+        label: Services
+        description: Services section
+        icon: receipt
+        tags: []
+        _inputs:
+          sections:
+            type: array
+            options:
+              structures:
+                style: select
+                values:
+                  - label: Section
+                    icon: add_box
+                    value:
+                      icon: ''
+                      title: ''
+                      text: ''
+                    _inputs:
+            cascade: true
+      - value:
+          _bookshop_name: slider
+          preheading: ''
+          heading: ''
+          background_image: ''
+          link:
+            text: ''
+            url: ''
+        label: Slider
+        description: slider section
+        icon: title
+        tags: []
+        _inputs:
+      - value:
+          _bookshop_name: testimonial
+        label: testimonial
+        description: Testimonial section
+        icon: receipt
+        tags: []
+        _inputs:
+timezone: Etc/UTC
