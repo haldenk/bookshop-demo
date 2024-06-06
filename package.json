@@ -6,14 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy-lunr": "cp node_modules/lunr/lunr.js static/js/",
-    "build:css": "npx tailwindcss -c ./tailwind/tailwind.config.js -i ./tailwind/assets/css/tailwind.css -o ./static/css/main.css"
+    "build:css": "npx tailwindcss -c ./tailwind/tailwind.config.js -i ./tailwind/assets/css/tailwind.css -o ./static/css/main.css",
+    "build": "hugo --config config.yaml"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bookshop/browser": "^3.10.0",
-    "@bookshop/generate": "^3.10.0",
+    "@bookshop/browser": "3.10.0",
+    "@bookshop/generate": "3.10.0",
     "@bookshop/hugo-engine": "^3.10.0",
     "autoprefixer": "^10.4.19",
     "lunr": "^2.3.9",
