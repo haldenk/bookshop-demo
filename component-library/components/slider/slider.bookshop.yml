@@ -1,15 +1,13 @@
-spec:
-  structures:
-    - content_blocks
-  label: Slider
-  description: Main page banner block
-  icon: title
-  tags: []
-
+label: Slider
+icon: title
+description: Main page banner block
+tags: []
+structures:
+  - content_blocks
 props:
   preheading: Prepare for new future
   heading: "Our work is <br>presentation of our <br>capabilities."
   background_image: /images/bg/home-1.jpg
   link:
-    - text: Get started
-      url: "#"
+    text: Get started
+    url: "#"
