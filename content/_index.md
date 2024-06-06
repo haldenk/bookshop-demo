@@ -1,21 +1,17 @@
 ---
 title: Home
 content_blocks:
-  - _bookshop_name: "slider"
-    preheading: "Prepare for new future"
-    heading: "Our work is <br>presentation of our <br>capabilities."
-    background_image: "/images/bg/home-1.jpg"
+  - _bookshop_name: slider
+    background_image: /images/bg/home-1.jpg
     link:
-      text: "Get started"
-      url: "#"
-  - _bookshop_name: about
-    link:
-      "-text": Get started
-      url: https://github.com
+      text: Get started
+      url: '#'
+    preheading: Prepare for new future
+    heading: Our work is <br>presentation of our <br>capabilities.
   - _bookshop_name: intro
-    preheading: ""
-    heading: ""
-    icon: ""
+    preheading: ''
+    heading: ''
+    icon: ''
     icon1: ti-desktop
     icon2: ti-medall
     icon3: ti-layers
