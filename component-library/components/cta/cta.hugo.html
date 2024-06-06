@@ -3,15 +3,11 @@
     <div class="row">
       <div class="col-xl-5 col-lg-6">
         <div class="cta-item bg-white p-5 rounded">
-          <span class="h6 text-color editable">Prepare for new future</span>
-          <h2 class="mt-2 mb-4">
-            Entrust Your Project to Our Best Team of Professionals
-          </h2>
-          <p class="lead mb-4 editable">
-            Have any project on mind? For immidiate support:
-          </p>
+          <span class="h6 text-color">{{ .title | markdownify}}</span>
+          <h2 class="mt-2 mb-4">{{ .header | markdownify}}</h2>
+          <p class="lead mb-4">{{ .subheader | markdownify}} :</p>
           <h3>
-            <i class="ti-mobile mr-3 text-color editable"></i>+23 876 65 455
+            <i class="ti-mobile mr-3 text-color"></i>{{ .number | markdownify}}
           </h3>
         </div>
       </div>

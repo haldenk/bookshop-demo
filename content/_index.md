@@ -19,8 +19,6 @@ content_blocks:
     icon1: ti-desktop
     icon2: ti-medall
     icon3: ti-layers
-  - _bookshop_name: counter
-    icon: ti-desktop
   - _bookshop_name: services
     sections:
       - icon: ti-desktop

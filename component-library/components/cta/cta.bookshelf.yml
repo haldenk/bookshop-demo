@@ -1,7 +1,19 @@
 spec:
   structures:
     - content_blocks
-  label: About
-  description: Main page CTA section
+  label: CTA
+  description: CTA section
   icon: title
   tags: []
+
+blueprint:
+  title: ""
+  header: ""
+  subheader: ""
+  number: ""
+
+preview:
+  title: we create for you
+  header: Entrust your project to our best team of professionals
+  subheader: Have any projects in mind? For immediate support,
+  number: +12 345 67 890

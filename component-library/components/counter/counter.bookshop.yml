@@ -3,13 +3,30 @@ spec:
   structures:
     - content_blocks
   label: Counter
-  description: Counter section section
+  description: Counter section
   icon: receipt
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  icon: ti-desktop
+  sections:
+    - icon: ""
+      number: ""
+      stat: ""
 
+preview:
+  secions:
+    - icon: ti-desktop
+      number: 1730
+      stat: projects done
+    - icon: ti-desktop
+      number: 125
+      stat: users worldwide
+    - icon: ti-desktop
+      number: 39
+      stat: available countries
+    - icon: ti-desktop
+      number: 14
+      stat: awards revieved
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}

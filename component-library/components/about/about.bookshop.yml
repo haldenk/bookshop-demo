@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: About
-  description: Main page about section
+  description: about section
   icon: title
   tags: []
 
