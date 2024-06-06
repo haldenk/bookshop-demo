@@ -2,19 +2,19 @@
 title: Home
 content_blocks:
   - _bookshop_name: slider
+    preheading: Prepare for new future
+    heading: Our work is <br>presentation of our <br>capabilities.
     background_image: /images/bg/home-1.jpg
     link:
       text: Get started
       url: '#'
-    preheading: Prepare for new future
-    heading: Our work is <br>presentation of our <br>capabilities.
   - _bookshop_name: intro
-    preheading: ''
-    heading: ''
-    icon: ''
     icon1: ti-desktop
     icon2: ti-medall
     icon3: ti-layers
+    preheading: ''
+    heading: ''
+    icon: ''
   - _bookshop_name: services
     sections:
       - icon: ti-desktop
@@ -50,5 +50,4 @@ content_blocks:
         text: >-
           A digital agency isn't here to replace your internal team, we're here
           to partner
-  - _bookshop_name: testimonial
 ---
