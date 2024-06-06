@@ -9,12 +9,20 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  preheading: ""
+  heading: ""
+  subheading: ""
+  text: ""
   link:
     - text: ""
       url: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
+  preheading: what we are
+  heading: We are a dynamic team of creative people
+  subheading: We are the perect solution
+  text: We provide consulting services in the area of IFRS and management reporting, helpingcompanies to reach their highest level. We optimize business processes, making them easier.
   link:
     - text: Get started
       url: "#"
