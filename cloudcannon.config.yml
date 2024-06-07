@@ -32,6 +32,12 @@ collections_config:
       banner:
         type: image
         cascade: true
+      date:
+        type: datetime
+        options:
+          timezone:
+          empty_type: string
+        cascade: true
     _select_data:
     _structures:
     disable_add: false
