@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
-image: "/images/blog/"
+title: "{{ replace .Name "-" " " | title }}" #required
+date: {{ .Date }} #required
+draft: true 
+image: "/images/blog/" #required
 ---
