@@ -45,11 +45,11 @@ collections_config:
         default: true
       - name: "thumbnail"
         label: "Thumbnail"
-        type: "text"
+        type: "image"
         required: true
       - name: "banner"
         label: "Banner"
-        type: "text"
+        type: "image"
         required: true
       - name: "image"
         label: "Image"
