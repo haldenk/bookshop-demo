@@ -3802,7 +3802,7 @@ Run %cnpx @bookshop/up@latest%c in your root directory to upgrade all Bookshop d
   var about_hugo_default2 = about_hugo_default;
 
   // component-library/components/counter/counter.hugo.html
-  var counter_hugo_default = '<section class="section counter">\n  <div class="container">\n    <div class="row">\n      {{ range .sections }}\n      <div class="col-lg-3 col-md-6 col-sm-6">\n        <div class="counter-item text-center mb-5 mb-lg-0">\n          <h3 class="mb-0">\n            <span class="counter-stat font-weight-bold"\n              >{{ .number | markdownify}}</span\n            >\n            +\n          </h3>\n          <p class="text-muted">{{ .stat | markdownify }}</p>\n        </div>\n      </div>\n      {{ end }}\n    </div>\n  </div>\n</section>\n';
+  var counter_hugo_default = '<section class="section counter">\n  <div class="container">\n    <div class="row">\n      {{ range .sections }}\n      <div class="col-lg-3 col-md-6 col-sm-6">\n        <div class="counter-item text-center mb-5 mb-lg-0">\n          <h3 class="mb-0">\n            <span class="counter-stat font-weight-bold">\n              {{ .number | markdownify}} </span\n            >+\n          </h3>\n          <p class="text-muted">{{ .stat | markdownify }}</p>\n        </div>\n      </div>\n      {{ end }}\n    </div>\n  </div>\n</section>\n';
 
   // bookshop-import-file:components/counter/counter.hugo.html__bookshop_file__
   var counter_hugo_default2 = counter_hugo_default;

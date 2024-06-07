@@ -459,6 +459,156 @@
           "icon": "receipt",
           "tags": [],
           "_inputs": {}
+        },
+        {
+          "value": {
+            "_bookshop_name": "about",
+            "preheading": "",
+            "heading": "",
+            "subheading": "",
+            "text": "",
+            "link": []
+          },
+          "label": "About",
+          "description": "about section",
+          "icon": "title",
+          "tags": [],
+          "_inputs": {
+            "link": {
+              "options": {
+                "structures": {
+                  "values": [
+                    {
+                      "label": "Link",
+                      "icon": "add_box",
+                      "value": {
+                        "text": "",
+                        "url": ""
+                      },
+                      "_inputs": {}
+                    }
+                  ]
+                }
+              },
+              "type": "array"
+            }
+          }
+        },
+        {
+          "value": {
+            "_bookshop_name": "counter",
+            "sections": []
+          },
+          "label": "Counter",
+          "description": "Counter section",
+          "icon": "receipt",
+          "tags": [],
+          "_inputs": {
+            "sections": {
+              "options": {
+                "structures": {
+                  "values": [
+                    {
+                      "label": "Section",
+                      "icon": "add_box",
+                      "value": {
+                        "icon": "",
+                        "number": 0,
+                        "stat": ""
+                      },
+                      "_inputs": {}
+                    }
+                  ]
+                }
+              },
+              "type": "array"
+            }
+          }
+        },
+        {
+          "value": {
+            "_bookshop_name": "hero",
+            "title": "Hello World!",
+            "background_image": "/images/bg/home-2.jpg"
+          },
+          "label": "Hero",
+          "description": "hero block",
+          "icon": "title",
+          "tags": [
+            "Hero"
+          ],
+          "_inputs": {}
+        },
+        {
+          "value": {
+            "_bookshop_name": "intro",
+            "icon1": "ti-desktop",
+            "icon2": "ti-medall",
+            "icon3": "ti-layers"
+          },
+          "label": "Intro",
+          "description": "Overview section",
+          "icon": "receipt",
+          "tags": [],
+          "_inputs": {}
+        },
+        {
+          "value": {
+            "_bookshop_name": "services",
+            "sections": []
+          },
+          "label": "Services",
+          "description": "Services section",
+          "icon": "receipt",
+          "tags": [],
+          "_inputs": {
+            "sections": {
+              "options": {
+                "structures": {
+                  "values": [
+                    {
+                      "label": "Section",
+                      "icon": "add_box",
+                      "value": {
+                        "icon": "",
+                        "title": "",
+                        "text": ""
+                      },
+                      "_inputs": {}
+                    }
+                  ]
+                }
+              },
+              "type": "array"
+            }
+          }
+        },
+        {
+          "value": {
+            "_bookshop_name": "slider",
+            "preheading": "",
+            "heading": "",
+            "background_image": "",
+            "link": {
+              "text": "",
+              "url": ""
+            }
+          },
+          "label": "Slider",
+          "description": "slider section",
+          "icon": "title",
+          "tags": [],
+          "_inputs": {}
+        },
+        {
+          "value": {
+            "_bookshop_name": "testimonial"
+          },
+          "label": "testimonial",
+          "description": "Testimonial section",
+          "icon": "receipt",
+          "tags": [],
+          "_inputs": {}
         }
       ]
     }

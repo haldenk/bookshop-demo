@@ -11,7 +11,7 @@ spec:
 blueprint:
   sections:
     - icon: ""
-      number: ""
+      number: 0
       stat: ""
 
 preview:
