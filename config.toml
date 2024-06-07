@@ -12,7 +12,7 @@ category = "categories"
 posts = ":section/:year/:month/:day/:title/"
 
 [archetypes]
-posts = ["post.md"]
+posts = ["archetpes/post.md"]
 
 [menu]
   [[menu.main]]
