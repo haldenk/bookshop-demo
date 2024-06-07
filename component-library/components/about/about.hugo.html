@@ -4,7 +4,9 @@
     <div class="row">
       <div class="col-lg-6 offset-lg-6 offset-md-0">
         <div class="about-item">
-          <span class="h6 text-color editable">{{ .preheading | markdownify }}</span>
+          <span class="h6 text-color editable"
+            >{{ .preheading | markdownify }}</span
+          >
           <h2 class="mt-3 mb-4 position-relative content-title editable">
             {{ .heading | markdownify }}
           </h2>
@@ -12,11 +14,12 @@
             <h4 class="mb-3 position-relative editable">
               {{ .subheading | markdownify }}
             </h4>
-            <p class="mb-5 editable">{{ .text}}</p>
-
-            <a href="{{ .link.url }}" class="btn btn-main btn-round-full"
-              >{{ .link.text | markdownify }}</a
-            >
+            <p class="mb-5 editable">{{ .text | markdownify }}</p>
+            {{ range .link }}
+            <a href="{{ .url }}" class="btn btn-main btn-round-full">
+              {{ .text | markdownify }}
+            </a>
+            {{ end }}
           </div>
         </div>
       </div>
