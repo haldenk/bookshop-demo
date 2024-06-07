@@ -1,0 +1,25 @@
+spec:
+  structures:
+    - content_blocks
+  label: start
+  description: About page start section
+  icon: title
+  tags: []
+
+blueprint:
+  title: ""
+  header: ""
+  text: ""
+  link:
+    text: ""
+    url: ""
+  background_image: ""
+
+preview:
+  title: we create for you
+  header: Entrust your project to our best team of professionals
+  text: Have any projects in mind? For immediate support,
+  link:
+    text: Contact Us
+    url: "#"
+  background_image: "/images/about/about-1.jpg"
