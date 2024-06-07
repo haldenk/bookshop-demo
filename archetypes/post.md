@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}" #required
-date: {{ now.Format "2006-01-02" }}  # Required
-draft: true 
-image: "/images/blog/" #required
+title: "{{ replace .Name "-" " " | title }}"  # Required
+date: {{ .Date | default (now.Format "2006-01-02") }}  # Required and defaults to today's date
+draft: true
+image: "/images/blog/"  # Required
 ---
