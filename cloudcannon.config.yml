@@ -25,34 +25,19 @@ collections_config:
   posts:
     path: content/posts
     output: true
+    description: ''
     icon: notes
+    _editables:
+    _inputs:
+      banner:
+        type: image
+        cascade: true
+    _select_data:
+    _structures:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    fields:
-      - name: "title"
-        label: "Title"
-        type: "text"
-        required: true
-      - name: "date"
-        label: "Date"
-        type: "datetime"
-        required: true
-      - name: "draft"
-        label: "Draft"
-        type: "checkbox"
-        default: true
-      - name: "thumbnail"
-        label: "Thumbnail"
-        type: "text"
-        required: true
-      - name: "banner"
-        label: "Banner"
-        type: "text"
-        required: true
-      - name: "body"
-        label: "Body"
-        type: "markdown"
+    schemas:
   data:
     path: data
     output: false
