@@ -3893,76 +3893,7 @@ Run %cnpx @bookshop/up@latest%c in your root directory to upgrade all Bookshop d
   var start_hugo_default2 = start_hugo_default;
 
   // component-library/components/testimonial/testimonial.hugo.html
-  var testimonial_hugo_default = `<section class="section testimonial">\r
-  <div class="container">\r
-    <div class="row">\r
-      <div class="col-lg-7">\r
-        <div class="section-title">\r
-          <span class="h6 text-color editable">Clients testimonial</span>\r
-          <h2 class="mt-3 content-title editable">Check what's our clients say about us</h2>\r
-        </div>\r
-      </div>\r
-    </div>\r
-  </div>\r
-\r
-  <div class="container">\r
-    <div class="row testimonial-wrap">\r
-      <div class="testimonial-item position-relative">\r
-        <i class="ti-quote-left text-color"></i>\r
-\r
-        <div class="testimonial-item-content">\r
-          <p class="testimonial-text editable"> Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio\r
-            reiciendis error alias debitis atque consequuntur natus iusto recusandae.</p>\r
-\r
-          <div class="testimonial-author">\r
-            <h5 class="mb-0 text-capitalize editable">James Watson</h5>\r
-            <p class="editable">Excutive Director,themefisher</p>\r
-          </div>\r
-        </div>\r
-      </div>\r
-      <div class="testimonial-item position-relative">\r
-        <i class="ti-quote-left text-color"></i>\r
-\r
-        <div class="testimonial-item-content">\r
-          <p class="testimonial-text editable"> Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio\r
-            reiciendis error alias debitis atque consequuntur natus iusto recusandae.</p>\r
-\r
-          <div class="testimonial-author">\r
-            <h5 class="mb-0 text-capitalize editable">James Watson</h5>\r
-            <p class="editable">Excutive Director,themefisher</p>\r
-          </div>\r
-        </div>\r
-      </div>\r
-      <div class="testimonial-item position-relative">\r
-        <i class="ti-quote-left text-color"></i>\r
-\r
-        <div class="testimonial-item-content">\r
-          <p class="testimonial-text editable"> Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio\r
-            reiciendis error alias debitis atque consequuntur natus iusto recusandae.</p>\r
-\r
-          <div class="testimonial-author">\r
-            <h5 class="mb-0 text-capitalize editable">James Watson</h5>\r
-            <p class="editable">Excutive Director,themefisher</p>\r
-          </div>\r
-        </div>\r
-      </div>\r
-      <div class="testimonial-item position-relative">\r
-        <i class="ti-quote-left text-color"></i>\r
-\r
-        <div class="testimonial-item-content">\r
-          <p class="testimonial-text editable"> Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio\r
-            reiciendis error alias debitis atque consequuntur natus iusto recusandae.</p>\r
-\r
-          <div class="testimonial-author">\r
-            <h5 class="mb-0 text-capitalize editable">James Watson</h5>\r
-            <p class="editable">Excutive Director,themefisher</p>\r
-          </div>\r
-        </div>\r
-      </div>\r
-    </div>\r
-  </div>\r
-</section>\r
-`;
+  var testimonial_hugo_default = '<section class="section testimonial">\r\n  <div class="container">\r\n    <div class="row">\r\n      <div class="col-lg-7">\r\n        <div class="section-title">\r\n          <span class="h6 text-color editable">{{ .Params.title }}</span>\r\n          <h2 class="mt-3 content-title editable">{{ .Params.header }}</h2>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class="container">\r\n    <div class="row testimonial-wrap">\r\n      {{ range .sections }}\r\n      <div class="testimonial-item position-relative">\r\n        <i class="ti-quote-left text-color"></i>\r\n\r\n        <div class="testimonial-item-content">\r\n          <p class="testimonial-text editable">{{ .text | markdownify }}.</p>\r\n\r\n          <div class="testimonial-author">\r\n            <h5 class="mb-0 text-capitalize editable">\r\n              {{ .name | markdownify }}\r\n            </h5>\r\n            <p class="editable">{{ .position | markdownify }}</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      {{ end }}\r\n    </div>\r\n  </div>\r\n</section>\r\n';
 
   // bookshop-import-file:components/testimonial/testimonial.hugo.html__bookshop_file__
   var testimonial_hugo_default2 = testimonial_hugo_default;
