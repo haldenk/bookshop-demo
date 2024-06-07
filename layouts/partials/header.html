@@ -1,0 +1,41 @@
+<!-- Header Start -->
+<header class="navigation">
+    <div class="header-top">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-2 col-md-4">
+            <div
+              class="header-top-socials text-center text-lg-left text-md-left"
+            >
+              <a
+                href="{{ .Site.Data.company.facebook }}"
+                aria-label="facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="{{ .Site.Data.company.twitter }}" aria-label="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="{{ .Site.Data.company.github }}" aria-label="github"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="col-lg-10 col-md-8 text-center text-lg-right text-md-right"
+          >
+            <div class="header-top-info mb-2 mb-md-0">
+              <a href="tel:{{ .Site.Data.company.support.phone }}"
+                >Call Us :
+                <span>{{ .Site.Data.company.support.phone }}</span></a
+              >
+              <a href="{{ .Site.Data.company.email }}"
+                ><i class="fas fa-envelope mr-2"></i
+                ><span class="editable">support@gmail.com</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ partial "nav.html" . }}
+  </header>
