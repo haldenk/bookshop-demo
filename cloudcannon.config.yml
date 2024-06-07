@@ -51,10 +51,6 @@ collections_config:
         label: "Banner"
         type: "image"
         required: true
-      - name: "image"
-        label: "Image"
-        type: "text"
-        required: true
       - name: "body"
         label: "Body"
         type: "markdown"
