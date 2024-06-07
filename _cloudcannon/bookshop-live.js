@@ -3808,7 +3808,7 @@ Run %cnpx @bookshop/up@latest%c in your root directory to upgrade all Bookshop d
   var counter_hugo_default2 = counter_hugo_default;
 
   // component-library/components/cta/cta.hugo.html
-  var cta_hugo_default = '<section class="section cta">\r\n  <div class="container">\r\n    <div class="row">\r\n      <div class="col-xl-5 col-lg-6">\r\n        <div class="cta-item bg-white p-5 rounded">\r\n          <span class="h6 text-color">{{ .title | markdownify }}</span>\r\n          <h2 class="mt-2 mb-4">{{ .header | markdownify }}</h2>\r\n          <p class="lead mb-4">{{ .subheader | markdownify }} :</p>\r\n          <h3>\r\n            <i class="ti-mobile mr-3 text-color"></i>{{ .number | markdownify }}\r\n          </h3>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n';
+  var cta_hugo_default = '<section class="section cta">\r\n  <div class="container">\r\n    <div class="row">\r\n      <div class="col-xl-5 col-lg-6">\r\n        <div class="cta-item bg-white p-5 rounded">\r\n          <span class="h6 text-color">{{ .title | markdownify }}</span>\r\n          <h2 class="mt-2 mb-4">{{ .header | markdownify }}</h2>\r\n          <p class="lead mb-4">{{ .subheader | markdownify }} :</p>\r\n          <h3>\r\n            <i class="ti-mobile mr-3 text-color"></i>{{ .phone | markdownify }}\r\n          </h3>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n';
 
   // bookshop-import-file:components/cta/cta.hugo.html__bookshop_file__
   var cta_hugo_default2 = cta_hugo_default;
