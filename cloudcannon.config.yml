@@ -43,6 +43,14 @@ collections_config:
         label: "Draft"
         type: "checkbox"
         default: true
+      - name: "thumbnail"
+        label: "Thumbnail"
+        type: "text"
+        required: true
+      - name: "banner"
+        label: "Banner"
+        type: "text"
+        required: true
       - name: "image"
         label: "Image"
         type: "text"

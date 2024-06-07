@@ -81,7 +81,7 @@
 
              {{ range ( where site.RegularPages "Section" "posts" | first 3 ) }}
                <div class="media border-bottom py-3">
-                 <a href="#"><img loading="lazy" class="mr-4" src="{{ .Params.image_path }}" width="100" alt="blog"></a>
+                 <a href="#"><img loading="lazy" class="mr-4" src="{{ .Params.thumbnail }}" width="100" alt="blog"></a>
                  <div class="media-body">
                    <h6 class="my-2"><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></h6>
                    <span class="text-sm text-muted">{{ .Date | time.Format ":date_long" }}</span>
