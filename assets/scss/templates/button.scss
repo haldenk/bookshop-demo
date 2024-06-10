@@ -25,8 +25,8 @@
     color: $white;
     background: linear-gradient(
       90deg,
-      $primary-color 0%,
-      $secondary-color 167%
+      blue,
+      green
     );
 
     &:hover {
@@ -51,8 +51,8 @@
       transition: opacity 0.35s;
       background: linear-gradient(
         90deg,
-        $primary-color 0%,
-        $secondary-color 107%
+        red,
+        orange
       );
     }
   }
