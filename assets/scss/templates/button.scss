@@ -30,7 +30,7 @@
     );
 
     &:hover {
-      color: $white !important;
+      color: white;
 
       &:before {
         opacity: 1;
@@ -58,11 +58,11 @@
   }
 
   &--secondary {
-    color: $text-color;
-    background: $background-color-alt;
+    color: red;
+    background: blue;
 
     &:hover {
-      color: $text-color;
+      color: black;
     }
   }
 
