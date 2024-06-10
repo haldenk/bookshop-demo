@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const date = new Date();
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     const expires = "expires=" + date.toUTCString();
-    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    document.cookie = `${name}=${value}; ${expires}; path=/; SameSite=Lax`;
   }
 
   // Function to get the value of a cookie
@@ -20,10 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cookieArray = decodedCookie.split(";");
 
     for (let i = 0; i < cookieArray.length; i++) {
-      let cookie = cookieArray[i];
-      while (cookie.charAt(0) === " ") {
-        cookie = cookie.substring(1);
-      }
+      let cookie = cookieArray[i].trim();
       if (cookie.indexOf(cookieName) === 0) {
         return cookie.substring(cookieName.length, cookie.length);
       }
@@ -38,52 +35,49 @@ document.addEventListener("DOMContentLoaded", function () {
   // Show banner if user hasn't accepted cookies before
   if (!hasAcceptedCookies) {
     cookieConsentBanner.style.display = "block";
+  } else {
+    if (cancelCookiesButton) cancelCookiesButton.style.display = "block";
   }
 
   // Event listener for accept cookies button
   acceptCookiesButton.addEventListener("click", function () {
     setCookie("cookieConsent", "accepted", 365);
-    console.log("accepted cookies from banner");
-    trackerscript();
+    const trackingScript = `
+        console.log("Cookies have been accepted from banner");
+      `;
+    eval(trackingScript);
     cookieConsentBanner.style.display = "none";
-    cancelCookiesButton.style.display = "block";
-    allowCookiesButton.style.display = "none";
+    if (cancelCookiesButton) cancelCookiesButton.style.display = "block";
+    if (allowCookiesButton) allowCookiesButton.style.display = "none";
   });
 
   // Event listener for reject cookies button
   rejectCookiesButton.addEventListener("click", function () {
     console.log("You have denied cookies from banner");
-    removeTracker();
     cookieConsentBanner.style.display = "none";
-    allowCookiesButton.style.display = "block";
-    cancelCookiesButton.style.display = "none";
+    if (allowCookiesButton) allowCookiesButton.style.display = "block";
+    if (cancelCookiesButton) cancelCookiesButton.style.display = "none";
   });
 
   // Event listener for cancel cookies button
-  cancelCookiesButton.addEventListener("click", function () {
-    console.log("You have canceled the use of cookies from footer");
-    removeTracker();
-    // Delete the cookie consent preference
-    document.cookie =
-      "cookieConsent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    cancelCookiesButton.style.display = "none";
-    allowCookiesButton.style.display = "block";
-  });
+  if (cancelCookiesButton) {
+    cancelCookiesButton.addEventListener("click", function () {
+      console.log("You have canceled the use of cookies from footer");
+      // Delete the cookie consent preference
+      document.cookie =
+        "cookieConsent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      if (cancelCookiesButton) cancelCookiesButton.style.display = "none";
+      if (allowCookiesButton) allowCookiesButton.style.display = "block";
+    });
+  }
 
   // Event listener for allow cookies button
-  allowCookiesButton.addEventListener("click", function () {
-    setCookie("cookieConsent", "accepted", 365);
-    trackerscript();
-    console.log('cookies enabled from footer"');
-    allowCookiesButton.style.display = "none";
-    cancelCookiesButton.style.display = "block";
-  });
+  if (allowCookiesButton) {
+    allowCookiesButton.addEventListener("click", function () {
+      setCookie("cookieConsent", "accepted", 365);
+      console.log('Cookies enabled from footer');
+      if (allowCookiesButton) allowCookiesButton.style.display = "none";
+      if (cancelCookiesButton) cancelCookiesButton.style.display = "block";
+    });
+  }
 });
-
-function trackerscript() {
-  console.log("tracker function hit");
-}
-
-function removeTracker() {
-  console.log("data has been removed from mautic");
-}
