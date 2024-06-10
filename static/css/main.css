@@ -558,8 +558,3 @@ video {
   --tw-contain-paint: ;
   --tw-contain-style: ;
 }
-
-#allow-cookies,
-#cancel-cookies {
-  display: block;
-}
