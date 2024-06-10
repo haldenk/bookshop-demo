@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     const expires = "expires=" + date.toUTCString();
     document.cookie = `${name}=${value}; ${expires}; path=/; SameSite=Lax`;
+    console.log(`Cookie set: ${name}=${value}; ${expires}; path=/;`);
   }
 
   // Function to get the value of a cookie
@@ -31,12 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Check if user has previously accepted cookies
   const cookieConsent = getCookie("cookieConsent");
   const hasAcceptedCookies = cookieConsent === "accepted";
+  console.log(`Cookie Consent: ${cookieConsent}`);
 
   // Show banner if user hasn't accepted cookies before
   if (!hasAcceptedCookies) {
     cookieConsentBanner.style.display = "block";
   } else {
     if (cancelCookiesButton) cancelCookiesButton.style.display = "block";
+    if (allowCookiesButton) allowCookiesButton.style.display = "none";
   }
 
   // Event listener for accept cookies button
@@ -75,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (allowCookiesButton) {
     allowCookiesButton.addEventListener("click", function () {
       setCookie("cookieConsent", "accepted", 365);
-      console.log('Cookies enabled from footer');
+      console.log("Cookies enabled from footer");
       if (allowCookiesButton) allowCookiesButton.style.display = "none";
       if (cancelCookiesButton) cancelCookiesButton.style.display = "block";
     });
