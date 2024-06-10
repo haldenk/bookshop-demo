@@ -33,22 +33,25 @@ document.addEventListener("DOMContentLoaded", function () {
   const cookieConsent = getCookie("cookieConsent");
   const hasAcceptedCookies = cookieConsent === "accepted";
   console.log(`Cookie Consent: ${cookieConsent}`);
+  console.log(`Has Accepted Cookies: ${hasAcceptedCookies}`);
 
-  // Show banner if user hasn't accepted cookies before
+  // Show or hide banner based on cookie consent
   if (!hasAcceptedCookies) {
+    console.log("Showing banner because cookies have not been accepted.");
     cookieConsentBanner.style.display = "block";
-  } else {
-    if (cancelCookiesButton) cancelCookiesButton.style.display = "block";
     if (allowCookiesButton) allowCookiesButton.style.display = "none";
+    if (cancelCookiesButton) cancelCookiesButton.style.display = "none";
+  } else {
+    console.log("Hiding banner because cookies have been accepted.");
+    cookieConsentBanner.style.display = "none";
+    if (allowCookiesButton) allowCookiesButton.style.display = "none";
+    if (cancelCookiesButton) cancelCookiesButton.style.display = "block";
   }
 
   // Event listener for accept cookies button
   acceptCookiesButton.addEventListener("click", function () {
     setCookie("cookieConsent", "accepted", 365);
-    const trackingScript = `
-        console.log("Cookies have been accepted from banner");
-      `;
-    eval(trackingScript);
+    console.log("Cookies have been accepted from banner");
     cookieConsentBanner.style.display = "none";
     if (cancelCookiesButton) cancelCookiesButton.style.display = "block";
     if (allowCookiesButton) allowCookiesButton.style.display = "none";
@@ -78,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (allowCookiesButton) {
     allowCookiesButton.addEventListener("click", function () {
       setCookie("cookieConsent", "accepted", 365);
-      console.log("Cookies enabled from footer");
+      console.log('Cookies enabled from footer');
       if (allowCookiesButton) allowCookiesButton.style.display = "none";
       if (cancelCookiesButton) cancelCookiesButton.style.display = "block";
     });
