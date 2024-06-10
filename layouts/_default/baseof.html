@@ -5,8 +5,8 @@
   </head>
 
   <body>
-    {{ partial "header.html" . }} {{ block "main" . }}{{ end }} {{ partial
-    "footer.html" . }}
+    {{ partial "header.html" . }}{{ partial "cookie-consent.html" . }} {{ block
+    "main" . }}{{ end }} {{ partial "footer.html" . }}
 
     <!--Scroll to top-->
     <div id="scroll-to-top" class="scroll-to-top">
