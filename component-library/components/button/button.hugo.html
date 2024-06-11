@@ -1,11 +1,10 @@
 <a
-  class="c-button c-button--{{ .type | urlize }} c-button--{{ .width | urlize }} bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  class="c-button bg-blue-600 hover:bg-blue-800 text-black font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
   href="{{ .link_url }}"
   {{
   if
   .open_in_new_tab
-  }}
-  target="_blank"
+  }}target="_blank"
   {{
   end
   }}

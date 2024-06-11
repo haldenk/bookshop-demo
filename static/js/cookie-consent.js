@@ -36,15 +36,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Show banner if user hasn't accepted or rejected cookies before
   if (!hasAcceptedCookies && !hasRejectedCookies) {
     cookieConsentBanner.style.display = "block";
+  } else if (hasAcceptedCookies) {
+    cancelCookiesButton.style.display = "block";
+  } else {
+    allowCookiesButton.style.display = "block";
   }
 
   // Event listener for accept cookies button
   acceptCookiesButton.addEventListener("click", function () {
     setCookie("cookieConsent", "accepted", 365);
-    const trackingScript = `
-      console.log("Cookies have been accepted from banner");
-    `;
-    eval(trackingScript);
+    trackingScript();
     cookieConsentBanner.style.display = "none";
     cancelCookiesButton.style.display = "block";
     allowCookiesButton.style.display = "none";
@@ -61,9 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Event listener for cancel cookies button
   cancelCookiesButton.addEventListener("click", function () {
+    setCookie("cookieConsent", "rejected", 365);
     console.log("You have canceled the use of cookies from footer");
-    // Delete the cookie consent preference
-    document.cookie = "cookieConsent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     cancelCookiesButton.style.display = "none";
     allowCookiesButton.style.display = "block";
   });
@@ -71,8 +71,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener for allow cookies button
   allowCookiesButton.addEventListener("click", function () {
     setCookie("cookieConsent", "accepted", 365);
-    console.log('Cookies enabled from footer');
+    trackingScript();
+    console.log("Cookies enabled from footer");
     allowCookiesButton.style.display = "none";
     cancelCookiesButton.style.display = "block";
   });
 });
+
+function trackingScript() {
+  console.log("hello from the tracking script");
+}
