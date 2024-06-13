@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 install-hugo 0.111.3
 
