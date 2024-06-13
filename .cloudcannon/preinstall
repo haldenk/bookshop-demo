@@ -6,5 +6,4 @@ install-hugo 0.111.3
 # Update Bookshop
 npx -y @bookshop/up@latest --yes
 
-# Organize posts by date
-./organize_posts.sh
+

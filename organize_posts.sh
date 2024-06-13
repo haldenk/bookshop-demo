@@ -4,8 +4,8 @@ set -x
 # Directory containing posts
 POSTS_DIR="content/posts"
 
-# Find all .md files in content/posts, ignoring _index.md
-find "$POSTS_DIR" -name "*.md" ! -name "_index.md" | while read -r FILE; do
+# Find all .md files in content/posts (excluding _index.md) at the root level
+find "$POSTS_DIR" -maxdepth 1 -type f -name "*.md" ! -name "_index.md" | while read -r FILE; do
     # Extract the date from the front matter
     DATE=$(grep "^date: " "$FILE" | cut -d ' ' -f 2 | tr -d '"')
 
