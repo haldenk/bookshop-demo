@@ -1,16 +1,15 @@
-
 <script>
   window.store = {
     {{ range $index, $page := .Site.Pages }}
     "{{ $page.Permalink }}": {
       "title": "{{ $page.Title }}",
       "tags": [{{ range $page.Params.tags }}"{{ . }}",{{ end }}],
-      "content": "{{ $page.Plain }}", 
+      "content": "{{ $page.Plain }}",
       "url": "{{ $page.Permalink }}"
     },
     {{ else }}
     console.log("No pages found");
     {{ end }}
   };
-  console.log("window.store:", window.store); 
+  console.log("window.store:", window.store);
 </script>
