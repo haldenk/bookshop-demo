@@ -39,6 +39,18 @@ collections_config:
           empty_type: string
         instance_value: NOW
         cascade: true
+      categories:
+        type: select
+        options:
+          allow_create: true
+          allow_empty: true
+          values:
+            - eCommerce Technology
+            - Business Environment
+          value_key:
+        label: Select a category
+        instance_value: NOW
+        cascade: true
     _select_data:
     _structures:
     disable_add: false
